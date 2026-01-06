@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision Media – Video Produkcija</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b');
+      background-size: cover;
+      background-position: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #00ffd5;
+      text-align: center;
+    }
+
+    iframe {
+      border-radius: 10px;
+    }
+
+    .about {
+      background: #151515;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #00ffd5;
+      text-decoration: none;
+    }
+
+    /* CALL BUTTON */
+    .call-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 35px;
+      background: #00ffd5;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    /* SCROLL ANIMATION */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      section { padding: 40px 15px; }
+      .about { padding: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>Profesionalna Video Produkcija</h1>
+    <p>Kreiramo vizuelne priče koje grade brend i ostavljaju snažan utisak.</p>
+  </div>
+</header>
+
+<section class="fade-in">
+  <h2>Naše usluge</h2>
+  <div class="services">
+    <div class="card"><h3>Promotivni video</h3><p>Profesionalni promo sadržaj.</p></div>
+    <div class="card"><h3>Društvene mreže</h3><p>Shorts, Reels i TikTok videi.</p></div>
+    <div class="card"><h3>Event snimanja</h3><p>Događaji i manifestacije.</p></div>
+    <div class="card"><h3>Montaža</h3><p>Postprodukcija i kolor korekcija.</p></div>
+  </div>
+</section>
+
+<section class="fade-in">
+  <div class="about">
+    <h2>O nama</h2>
+    <p>
+      Firma sa više od <strong>4 godine iskustva</strong> u video produkciji.
+      Radimo promotivne, event, dron i social media projekte.
+    </p>
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Naši projekti</h2>
+  <div class="services">
+
+    <div class="card">
+      <h3>Dron – MSC Tehnička škola Ada</h3>
+      <iframe src="https://player.vimeo.com/video/1151731636" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h3>Shorts video</h3>
+      <iframe src="https://player.vimeo.com/video/1151730588" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h3>Dečija nedelja – TS Ada</h3>
+      <iframe src="https://player.vimeo.com/video/1151731001" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h3>BBQ Video</h3>
+      <iframe src="https://www.youtube.com/embed/gkXtTzwtLZs" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h3>Senta – Dron video</h3>
+      <iframe src="https://www.youtube.com/embed/3rIpYGyfcMw" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h3>PK Senta – Promo</h3>
+      <iframe src="https://www.youtube.com/embed/8XRqkmD9QhU" width="100%" height="220" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Kontakt</h2>
+  <p style="text-align:center;">
+    📧 <a href="mailto:vision.media.produkcija@gmail.com">vision.media.produkcija@gmail.com</a><br><br>
+    📸 <a href="https://www.instagram.com/vision_media_serbia" target="_blank">@vision_media_serbia</a>
+  </p>
+
+  <div style="text-align:center;">
+    <a href="tel:+381621411707" class="call-btn">📞 Pozovi odmah</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Vision Media. Sva prava zadržana.
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
